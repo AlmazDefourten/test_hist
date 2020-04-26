@@ -116,12 +116,12 @@ break;
 bool mm = 0;
 void MainWindow::on_pushButton_clicked()
 {
-
+p++;
     if (p == 11)
     {
         p = 0;
     }
-    p++;
+
    if (mm == 0)
    {
     ren();
@@ -137,13 +137,16 @@ void MainWindow::on_pushButton_clicked()
     if (an == otvet)
     {
     ui->dr->setStyleSheet("color: rgb(125, 255, 39)");
-    ui->statusbar->showMessage("Правильно!");
-
+   ui->dr->setText("Правильно!");
+    chetVer++;
+    ui->ver->setNum(chetVer);
     }
     else
     {
         ui->dr->setStyleSheet("color: rgb(255, 62, 28)");
-        ui->statusbar->showMessage("Неправильно!");
+        ui->dr->setText("Неправильно!");
+        chetNever++;
+        ui->nev->setNum(chetNever);
     }
     _return();
 }
