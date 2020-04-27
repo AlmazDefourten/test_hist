@@ -24,24 +24,6 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="dr">
-    <property name="geometry">
-     <rect>
-      <x>200</x>
-      <y>1280</y>
-      <width>611</width>
-      <height>81</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font: 40pt &quot; Light&quot;;
-font: 63 40pt &quot;Yu Gothic UI Semibold&quot;;
-color: rgb(37, 131, 255);</string>
-    </property>
-    <property name="text">
-     <string>Тест по истории</string>
-    </property>
-   </widget>
    <widget class="QTextEdit" name="label">
     <property name="geometry">
      <rect>
@@ -72,13 +54,56 @@ color: rgb(37, 131, 255);</string>
     <property name="geometry">
      <rect>
       <x>226</x>
-      <y>1196</y>
+      <y>1186</y>
       <width>271</width>
       <height>71</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">font: 6pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
     <property name="text">
      <string>Тест на 40-53 вопрос</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>20</y>
+      <width>191</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="dr">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>10</y>
+      <width>537</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 40pt &quot; Light&quot;;
+font: 63 40pt &quot;Yu Gothic UI Semibold&quot;;
+color: rgb(37, 131, 255);</string>
+    </property>
+    <property name="text">
+     <string>Тест по истории</string>
     </property>
    </widget>
    <widget class="QWidget" name="">
@@ -117,7 +142,7 @@ color: rgb(165, 204, 255);</string>
         </sizepolicy>
        </property>
        <property name="styleSheet">
-        <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+        <string notr="true">font: 18pt &quot;MS Shell Dlg 2&quot;;</string>
        </property>
        <property name="text">
         <string>Начать тест</string>
@@ -132,14 +157,14 @@ color: rgb(165, 204, 255);</string>
       <x>80</x>
       <y>110</y>
       <width>551</width>
-      <height>51</height>
+      <height>73</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_3">
      <item>
       <widget class="QLabel" name="plus">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+        <sizepolicy hsizetype="Fixed" vsizetype="Maximum">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
@@ -156,7 +181,7 @@ color: rgb(0, 255, 0);</string>
      <item>
       <widget class="QLabel" name="minus">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+        <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
@@ -175,9 +200,9 @@ color: rgb(255, 0, 0);</string>
    <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>1000</y>
-      <width>581</width>
+      <x>80</x>
+      <y>990</y>
+      <width>561</width>
       <height>191</height>
      </rect>
     </property>
@@ -192,6 +217,9 @@ color: rgb(255, 0, 0);</string>
            <verstretch>0</verstretch>
           </sizepolicy>
          </property>
+         <property name="styleSheet">
+          <string notr="true">font: 6pt &quot;MS Shell Dlg 2&quot;;</string>
+         </property>
          <property name="text">
           <string>Тест на 1-10 вопрос</string>
          </property>
@@ -204,6 +232,9 @@ color: rgb(255, 0, 0);</string>
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 6pt &quot;MS Shell Dlg 2&quot;;</string>
          </property>
          <property name="text">
           <string>Тест на 10-20 вопрос</string>
@@ -222,6 +253,9 @@ color: rgb(255, 0, 0);</string>
            <verstretch>0</verstretch>
           </sizepolicy>
          </property>
+         <property name="styleSheet">
+          <string notr="true">font: 6pt &quot;MS Shell Dlg 2&quot;;</string>
+         </property>
          <property name="text">
           <string>Тест на 20-30 вопрос</string>
          </property>
@@ -234,6 +268,9 @@ color: rgb(255, 0, 0);</string>
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 6pt &quot;MS Shell Dlg 2&quot;;</string>
          </property>
          <property name="text">
           <string>Тест на 30-40 вопрос</string>
@@ -249,21 +286,21 @@ color: rgb(255, 0, 0);</string>
      <rect>
       <x>328</x>
       <y>920</y>
-      <width>72</width>
-      <height>25</height>
+      <width>99</width>
+      <height>36</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_2">
      <item>
       <widget class="QLabel" name="ver">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+        <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
        </property>
        <property name="styleSheet">
-        <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+        <string notr="true">font: 21pt &quot;MS Shell Dlg 2&quot;;</string>
        </property>
        <property name="text">
         <string>0</string>
@@ -272,8 +309,14 @@ color: rgb(255, 0, 0);</string>
      </item>
      <item>
       <widget class="QLabel" name="nev">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
        <property name="styleSheet">
-        <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+        <string notr="true">font: 21pt &quot;MS Shell Dlg 2&quot;;</string>
        </property>
        <property name="text">
         <string>из </string>
@@ -282,8 +325,14 @@ color: rgb(255, 0, 0);</string>
      </item>
      <item>
       <widget class="QLabel" name="itogo">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
        <property name="styleSheet">
-        <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+        <string notr="true">font: 21pt &quot;MS Shell Dlg 2&quot;;</string>
        </property>
        <property name="text">
         <string>53</string>
