@@ -39,4 +39,4 @@ private:
 };
 void randSort(int *m, int size);
 #endif // MAINWINDOW_H
-ф
+
