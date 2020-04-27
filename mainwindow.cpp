@@ -9,7 +9,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
 
 }
-int chetVer, chetNever = 0;
+int chetVer;
    int xc[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 void MainWindow::PeremeshivanieMassiva() {
     srand(time(NULL));
@@ -116,17 +116,13 @@ break;
 bool mm = 0;
 void MainWindow::on_pushButton_clicked()
 {
-p++;
-    if (p == 11)
+ p++;
+    if (p == 10)
     {
         p = 0;
+        ui->pushButton->hide();
     }
 
-   if (mm == 0)
-   {
-    ren();
-    mm = 1;
-   }
     // вектор из десяти элементов
    // перемешиваеаем
        an = ui->lineEdit->text();
@@ -145,10 +141,11 @@ p++;
     {
         ui->dr->setStyleSheet("color: rgb(255, 62, 28)");
         ui->dr->setText("Неправильно!");
-        chetNever++;
         ui->nev->setNum(chetNever);
     }
     _return();
+
+    ui->vsego->setNum(p);
 }
 
 
