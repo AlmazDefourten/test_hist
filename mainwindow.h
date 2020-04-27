@@ -28,8 +28,15 @@ private slots:
     void PeremeshivanieMassiva();
 
 
+    void on_restart_clicked();
+    void ren();
+    void on_ver_linkActivated(const QString &link);
+
+    void on_testOd_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
 void randSort(int *m, int size);
 #endif // MAINWINDOW_H
+ф
