@@ -9,12 +9,13 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
 
 }
+int kros = 0;
 int chetPlus = 0, chetMinus = 0;
 int chetVer;
    int xc[54] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53};
 void MainWindow::PeremeshivanieMassiva() {
     srand(time(NULL));
-    const int size = 53;
+int size = 53;
 
     randSort(xc, size);
 
@@ -36,10 +37,13 @@ void MainWindow::ren()
 
 
 }
-void MainWindow::_return()
+void MainWindow::_return(int i)
 {
-
-    int a = xc[p];
+    int a;
+if (i == 1)
+     a = xc[p];
+else
+    a = p;
 
     switch(a)
 {
@@ -278,7 +282,8 @@ break;
         break;
 
     default:
-        ui->label->setText("nu");
+        ui->label->setText("Конец теста");
+        ui->label_3->setText("");
    }
 
 }
@@ -286,7 +291,7 @@ break;
 void MainWindow::on_pushButton_clicked()
 {
  p++;
-    if (p == 53)
+    if (p == 54)
     {
         p = 0;
         ui->pushButton->hide();
@@ -295,11 +300,12 @@ void MainWindow::on_pushButton_clicked()
     // вектор из десяти элементов
    // перемешиваеаем
        an = ui->lineEdit->text();
-
+ui->lineEdit->setText("");
 
 chetVer++;
 ui->ver->setNum(chetVer);
-
+if (otvet != "")
+{
     if (an == otvet)
     {
     ui->dr->setStyleSheet("color: rgb(125, 255, 39)");
@@ -314,8 +320,39 @@ ui->ver->setNum(chetVer);
         chetMinus++;
         ui->minus->setNum(chetMinus);
     }
-    _return();
-
+}
+    if (kros == 0)
+    _return(1);
+    else if (kros == 1)
+    {
+        _return(0);
+    if (p == 11)
+         ui->pushButton->hide();
+}
+    else if (kros == 2)
+    {
+        _return(2);
+        if (p == 21)
+            ui->pushButton->hide();
+    }
+    else if (kros == 3)
+    {
+        _return(3);
+        if (p == 31)
+                    ui->pushButton->hide();
+    }
+    else if (kros == 4)
+    {
+        _return(4);
+        if (p == 41)
+                    ui->pushButton->hide();
+    }
+    else if (kros == 5)
+    {
+        _return(5);
+        if (p == 54)
+                    ui->pushButton->hide();
+    }
 
 }
 
@@ -323,12 +360,110 @@ ui->ver->setNum(chetVer);
 void MainWindow::on_restart_clicked()
 {
 
+    kros = 0;
     PeremeshivanieMassiva();
     chetVer = 0;
     ui->ver->setNum(chetVer);
     p = 0;
     ui->pushButton->show();
     on_pushButton_clicked();
+    ui->minus->setNum(0);
+    chetMinus = 0;
+    chetPlus = 0;
+    ui->plus->setNum(0);
 
 }
 
+
+void MainWindow::on_testOd_clicked()
+{
+       ui->pushButton->show();
+    ui->minus->setNum(0);
+    chetPlus = 0;
+    chetMinus = 0;
+    ui->plus->setNum(0);
+    p = 0;
+    kros = 1;
+
+    on_pushButton_clicked();
+    ui->minus->setNum(0);
+    chetMinus = 0;
+    ui->plus->setNum(0);
+    chetPlus = 0;
+    ui->ver->setNum(1);
+}
+
+void MainWindow::on_TestD_clicked()
+{
+       ui->pushButton->show();
+    ui->minus->setNum(0);
+    chetPlus = 0;
+    chetMinus = 0;
+    ui->plus->setNum(0);
+    p = 11;
+    kros = 2;
+
+    on_pushButton_clicked();
+    ui->minus->setNum(0);
+    chetMinus = 0;
+    ui->plus->setNum(0);
+    chetPlus = 0;
+    ui->ver->setNum(1);
+}
+
+
+void MainWindow::on_TestT_clicked()
+{
+       ui->pushButton->show();
+    ui->minus->setNum(0);
+    chetPlus = 0;
+    chetMinus = 0;
+    ui->plus->setNum(0);
+    p = 21;
+    kros = 3;
+
+    on_pushButton_clicked();
+    ui->minus->setNum(0);
+    chetMinus = 0;
+    ui->plus->setNum(0);
+    chetPlus = 0;
+    ui->ver->setNum(1);
+}
+
+
+void MainWindow::on_TestC_clicked()
+{
+       ui->pushButton->show();
+    ui->minus->setNum(0);
+    chetPlus = 0;
+    chetMinus = 0;
+    ui->plus->setNum(0);
+    p = 31;
+    kros = 4;
+
+    on_pushButton_clicked();
+    ui->minus->setNum(0);
+    chetMinus = 0;
+    ui->plus->setNum(0);
+    chetPlus = 0;
+    ui->ver->setNum(1);
+}
+
+void MainWindow::on_pushButton_6_clicked()
+{
+    ui->pushButton->show();
+    ui->minus->setNum(0);
+    chetPlus = 0;
+    chetMinus = 0;
+    ui->plus->setNum(0);
+    p = 41;
+    kros = 5;
+
+    on_pushButton_clicked();
+    ui->minus->setNum(0);
+    chetMinus = 0;
+    ui->plus->setNum(0);
+    chetPlus = 0;
+    ui->ver->setNum(1);
+}
+ф
