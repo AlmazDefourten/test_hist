@@ -17,85 +17,281 @@
    <widget class="QLineEdit" name="lineEdit">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>50</y>
-      <width>721</width>
-      <height>241</height>
+      <x>210</x>
+      <y>590</y>
+      <width>461</width>
+      <height>71</height>
      </rect>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>450</x>
-      <y>300</y>
-      <width>291</width>
-      <height>91</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>OK</string>
     </property>
    </widget>
    <widget class="QLabel" name="dr">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>1190</y>
+      <x>200</x>
+      <y>1280</y>
       <width>611</width>
       <height>81</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 24pt &quot; Light&quot;;
-font: 63 24pt &quot;Yu Gothic UI Semibold&quot;;
+     <string notr="true">font: 40pt &quot; Light&quot;;
+font: 63 40pt &quot;Yu Gothic UI Semibold&quot;;
 color: rgb(37, 131, 255);</string>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string>Тест по истории</string>
     </property>
    </widget>
    <widget class="QTextEdit" name="label">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>420</y>
-      <width>641</width>
-      <height>491</height>
+      <x>30</x>
+      <y>240</y>
+      <width>681</width>
+      <height>311</height>
      </rect>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>300</x>
-      <y>1020</y>
-      <width>331</width>
-      <height>61</height>
+      <x>10</x>
+      <y>580</y>
+      <width>201</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 18pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Ответ:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_6">
+    <property name="geometry">
+     <rect>
+      <x>226</x>
+      <y>1196</y>
+      <width>271</width>
+      <height>71</height>
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string>Тест на 40-53 вопрос</string>
     </property>
    </widget>
-  </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>720</width>
-     <height>22</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QStatusBar" name="statusbar">
-   <property name="font">
-    <font>
-     <family>Calibri Light</family>
-     <pointsize>22</pointsize>
-    </font>
-   </property>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>47</x>
+      <y>680</y>
+      <width>631</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 48pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(165, 204, 255);</string>
+       </property>
+       <property name="text">
+        <string>OK</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="restart">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Начать тест</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>110</y>
+      <width>551</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QLabel" name="plus">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 24pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 255, 0);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="minus">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 24pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>1000</y>
+      <width>581</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QPushButton" name="testOd">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Тест на 1-10 вопрос</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="TestD">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Тест на 10-20 вопрос</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QPushButton" name="TestT">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Тест на 20-30 вопрос</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="TestC">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Тест на 30-40 вопрос</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>328</x>
+      <y>920</y>
+      <width>72</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="ver">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="nev">
+       <property name="styleSheet">
+        <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+       </property>
+       <property name="text">
+        <string>из </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="itogo">
+       <property name="styleSheet">
+        <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+       </property>
+       <property name="text">
+        <string>53</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
   </widget>
  </widget>
  <resources/>
