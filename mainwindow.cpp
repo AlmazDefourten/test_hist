@@ -29,14 +29,6 @@ MainWindow::~MainWindow()
 }
 QString otvet, an;
 
-void MainWindow::ren()
-{
-
-
-
-
-
-}
 void MainWindow::_return(int i)
 {
     int a;
@@ -295,6 +287,8 @@ void MainWindow::on_pushButton_clicked()
     {
         p = 0;
         ui->pushButton->hide();
+         ui->ver->setNum(53);
+
     }
 
     // вектор из десяти элементов
@@ -315,7 +309,7 @@ if (otvet != "")
     }
     else
     {
-        ui->dr->setStyleSheet("color: rgb(255, 62, 28)");
+        ui->dr->setStyleSheet("color: rgb(255, 62, 28);background-color: rgb(255, 255, 255);");
         ui->dr->setText("Неправильно!");
         chetMinus++;
         ui->minus->setNum(chetMinus);
@@ -326,32 +320,52 @@ if (otvet != "")
     else if (kros == 1)
     {
         _return(0);
-    if (p == 11)
+    if (p == 12)
+    {
+         ui->label->setText("");
          ui->pushButton->hide();
+         ui->ver->setNum(11);
+    }
 }
     else if (kros == 2)
     {
         _return(2);
-        if (p == 21)
+        if (p == 22)
+        {
+            ui->ver->setNum(11);
+             ui->label->setText("");
             ui->pushButton->hide();
+        }
     }
     else if (kros == 3)
     {
         _return(3);
-        if (p == 31)
+        if (p == 32)
+        {
+            ui->ver->setNum(11);
+             ui->label->setText("");
                     ui->pushButton->hide();
+        }
     }
     else if (kros == 4)
     {
         _return(4);
-        if (p == 41)
+        if (p == 42)
+        {
+            ui->ver->setNum(11);
+            ui->label->setText("");
                     ui->pushButton->hide();
+        }
     }
     else if (kros == 5)
     {
         _return(5);
         if (p == 54)
+        {
+            ui->ver->setNum(53);
+            ui->label->setText("");
                     ui->pushButton->hide();
+        }
     }
 
 }
@@ -359,7 +373,7 @@ if (otvet != "")
 
 void MainWindow::on_restart_clicked()
 {
-
+    ui->itogo->setNum(53);
     kros = 0;
     PeremeshivanieMassiva();
     chetVer = 0;
@@ -371,12 +385,15 @@ void MainWindow::on_restart_clicked()
     chetMinus = 0;
     chetPlus = 0;
     ui->plus->setNum(0);
+    ui->dr->setText("Нажми что нибудь");
 
 }
 
 
 void MainWindow::on_testOd_clicked()
 {
+  ui->itogo->setNum(11);
+    chetVer = 0;
        ui->pushButton->show();
     ui->minus->setNum(0);
     chetPlus = 0;
@@ -391,10 +408,13 @@ void MainWindow::on_testOd_clicked()
     ui->plus->setNum(0);
     chetPlus = 0;
     ui->ver->setNum(1);
+     ui->dr->setText("Нажми что нибудь");
 }
 
 void MainWindow::on_TestD_clicked()
 {
+  ui->itogo->setNum(11);
+    chetVer = 0;
        ui->pushButton->show();
     ui->minus->setNum(0);
     chetPlus = 0;
@@ -409,11 +429,14 @@ void MainWindow::on_TestD_clicked()
     ui->plus->setNum(0);
     chetPlus = 0;
     ui->ver->setNum(1);
+    ui->dr->setText("Нажми что нибудь");
 }
 
 
 void MainWindow::on_TestT_clicked()
 {
+  ui->itogo->setNum(11);
+    chetVer = 0;
        ui->pushButton->show();
     ui->minus->setNum(0);
     chetPlus = 0;
@@ -428,11 +451,14 @@ void MainWindow::on_TestT_clicked()
     ui->plus->setNum(0);
     chetPlus = 0;
     ui->ver->setNum(1);
+    ui->dr->setText("Нажми что нибудь");
 }
 
 
 void MainWindow::on_TestC_clicked()
 {
+  ui->itogo->setNum(11);
+    chetVer = 0;
        ui->pushButton->show();
     ui->minus->setNum(0);
     chetPlus = 0;
@@ -447,10 +473,13 @@ void MainWindow::on_TestC_clicked()
     ui->plus->setNum(0);
     chetPlus = 0;
     ui->ver->setNum(1);
+      ui->dr->setText("Нажми что нибудь");
 }
 
 void MainWindow::on_pushButton_6_clicked()
 {
+  ui->itogo->setNum(13);
+    chetVer = 0;
     ui->pushButton->show();
     ui->minus->setNum(0);
     chetPlus = 0;
@@ -465,5 +494,5 @@ void MainWindow::on_pushButton_6_clicked()
     ui->plus->setNum(0);
     chetPlus = 0;
     ui->ver->setNum(1);
+     ui->dr->setText("Нажми что нибудь");
 }
-ф
