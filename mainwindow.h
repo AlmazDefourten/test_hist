@@ -26,20 +26,11 @@ private slots:
     void on_pushButton_clicked();
     void _return(int i);
     void PeremeshivanieMassiva();
-
-
     void on_restart_clicked();
-    void ren();
-
-
     void on_testOd_clicked();
-
     void on_TestD_clicked();
-
     void on_TestT_clicked();
-
     void on_TestC_clicked();
-
     void on_pushButton_6_clicked();
 
 private:
